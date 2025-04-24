@@ -75,8 +75,4 @@ The basic structure of the project is as follows:
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
-```
 
-I’ve updated it with the new information while keeping the structure similar to the original. It now reflects the current state of the project with the necessary instructions and details for setup and running the application.
-
-Feel free to push this to your GitHub repository! Let me know if you need further changes.
