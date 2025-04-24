@@ -1,78 +1,123 @@
 
+# Pokemon Frontend
 
-```markdown
-# Pokémon Frontend Application
-
-This is a React TypeScript application that displays information about Pokémon. The app communicates with a backend API to retrieve and show the Pokémon data.
-
-## Tech Stack
-
-- **React**: A JavaScript library for building user interfaces.
-- **TypeScript**: A statically typed superset of JavaScript that provides optional type checking.
-- **Vite**: A modern, fast build tool and development server.
-- **Yarn**: A package manager that is fast, reliable, and secure.
-- **Node.js**: A JavaScript runtime used for server-side scripting.
+Frontend application for the Pokémon app built with **React**, **TypeScript**, and **Vite**.
 
 ## Prerequisites
 
-Before running the app, make sure you have the following tools installed on your machine:
+Before running the project, ensure you have the following installed:
 
-- **Node.js**: You can install Node.js using [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm). Use the `.nvmrc` file to ensure you're using the correct Node.js version.
-- **Yarn**: A package manager to install dependencies. You can install it by following the [Yarn installation guide](https://classic.yarnpkg.com/en/docs/install/).
+### 1. **Node.js (v22.14.0)**
 
-## Getting Started
+Follow these steps to install and use **Node.js v22.14.0**:
 
-### 1. Clone the repository
+#### Install `nvm` (Node Version Manager)
 
-First, clone the repository from GitHub:
+If you don’t have `nvm` installed, you can install it by running the following command in your terminal:
+
+For **macOS/Linux**:
 
 ```bash
-git clone https://github.com/DanielM3218/pokemon-front-ui.git
-cd pokemon-front-ui
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
 
-### 2. Install dependencies
+For **Windows**, follow the installation guide in the [nvm-windows repository](https://github.com/coreybutler/nvm-windows).
 
-Make sure you're using the correct version of Node.js as defined in the `.nvmrc` file. If you're using `nvm`, run:
+Once `nvm` is installed, restart your terminal or run the following to load `nvm`:
 
 ```bash
-nvm install
+source ~/.bashrc  # or source ~/.zshrc for zsh users
+```
+
+#### Install Node.js v22.14.0
+
+After `nvm` is installed, run the following command to install Node version **22.14.0**:
+
+```bash
+nvm install 22.14.0
+```
+
+#### Switch to Node v22.14.0
+
+To make sure you're using **Node v22.14.0**, run:
+
+```bash
+nvm use 22.14.0
+```
+
+#### Verify the Installed Version
+
+Check if the correct version is being used:
+
+```bash
+node -v
+```
+
+It should return:
+
+```
+v22.14.0
+```
+
+#### Set Node v22.14.0 as Default (Optional)
+
+If you want to ensure that **Node v22.14.0** is used by default every time you start a new terminal session, run:
+
+```bash
+nvm alias default 22.14.0
+```
+
+#### Update `.nvmrc` for Project Consistency
+
+To ensure that everyone working on this project uses **Node v22.14.0**, add the version to an `.nvmrc` file:
+
+```bash
+echo "22.14.0" > .nvmrc
+```
+
+This way, anyone working on the project can simply run:
+
+```bash
 nvm use
 ```
 
-Then, install the project dependencies using Yarn:
+and `nvm` will automatically switch to the correct Node version.
+
+### 2. **Yarn**
+
+Install Yarn globally if you haven't already:
+
+```bash
+npm install --global yarn
+```
+
+Verify installation:
+
+```bash
+yarn --version
+```
+
+## Setup Instructions
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/DanielM3218/pokemon-frontend.git
+cd pokemon-frontend
+```
+
+2. **Install Dependencies**
 
 ```bash
 yarn install
 ```
 
-### 3. Run the application
-
-Start the development server:
+3. **Run the Development Server**
 
 ```bash
 yarn dev
 ```
 
-The app will be accessible in your browser at `http://localhost:3000`. You should see a simple "Hello, World!" message displayed.
+This starts the Vite server. Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
 
-## Project Structure
-
-The basic structure of the project is as follows:
-
-- `src/`:
-  - `App.tsx`: The main component that renders the app's UI.
-  - `main.tsx`: The entry point for the React app.
-  - `index.css`: The global styles for the app.
-
-## Development Workflow
-
-- To create a new feature or bug fix, create a new branch from `dev`.
-- Commit your changes and push the branch to GitHub.
-- Create a pull request (PR) from your feature branch to `dev` for review.
-- Once the PR is approved, it will be merged into `dev`.
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
+---
