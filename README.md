@@ -67,21 +67,13 @@ If you want to ensure that **Node v22.14.0** is used by default every time you s
 nvm alias default 22.14.0
 ```
 
-#### Update `.nvmrc` for Project Consistency
-
-To ensure that everyone working on this project uses **Node v22.14.0**, add the version to an `.nvmrc` file:
-
-```bash
-echo "22.14.0" > .nvmrc
-```
-
-This way, anyone working on the project can simply run:
+To ensure using the correct Node version use the comman "nvm use" to get the node version from the .nvrmc file.
 
 ```bash
 nvm use
 ```
 
-and `nvm` will automatically switch to the correct Node version.
+`nvm` will automatically switch to the correct Node version.
 
 ### 2. **Yarn**
 
