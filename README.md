@@ -1,83 +1,45 @@
-
-# Pokemon Frontend
+# Pokémon Frontend
 
 Frontend application for the Pokémon app built with **React**, **TypeScript**, and **Vite**.
 
-## Prerequisites
+## Setup Instructions
 
-Before running the project, ensure you have the following installed:
+### 1. Clone the Repository
 
-### 1. **Node.js (v22.14.0)**
-
-Follow these steps to install and use **Node.js v22.14.0**:
-
-#### Install `nvm` (Node Version Manager)
-
-If you don’t have `nvm` installed, you can install it by running the following command in your terminal:
-
-For **macOS/Linux**:
+Clone the project repository to your local machine:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+git clone https://github.com/DanielM3218/pokemon-front-ui.git
+cd pokemon-front-ui
 ```
 
-For **Windows**, follow the installation guide in the [nvm-windows repository](https://github.com/coreybutler/nvm-windows).
+### 2. Prerequisites
 
-Once `nvm` is installed, restart your terminal or run the following to load `nvm`:
+Ensure the following tools are installed before running the project:
 
-```bash
-source ~/.bashrc  # or source ~/.zshrc for zsh users
-```
+#### **Node.js & nvm**
 
-#### Install Node.js v22.14.0
+The project uses a specific Node.js version, which is specified in the `.nvmrc` file. To use the correct version, follow these steps:
 
-After `nvm` is installed, run the following command to install Node version **22.14.0**:
+- If you don’t have `nvm` (Node Version Manager) installed, you can install it by following the instructions [here](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-```bash
-nvm install 22.14.0
-```
+- Once `nvm` is installed, run the following command to switch to the correct Node.js version:
 
-#### Switch to Node v22.14.0
+  ```bash
+  nvm use
+  ```
 
-To make sure you're using **Node v22.14.0**, run:
+  This command will automatically use the version specified in the `.nvmrc` file. 
 
-```bash
-nvm use 22.14.0
-```
+  you should use the version `22.14.0`, to chack that run:
 
-#### Verify the Installed Version
+  ```bash
+  node -v
+  ```
 
-Check if the correct version is being used:
+#### **Yarn**
 
-```bash
-node -v
-```
-
-It should return:
-
-```
-v22.14.0
-```
-
-#### Set Node v22.14.0 as Default (Optional)
-
-If you want to ensure that **Node v22.14.0** is used by default every time you start a new terminal session, run:
-
-```bash
-nvm alias default 22.14.0
-```
-
-To ensure using the correct Node version use the comman "nvm use" to get the node version from the .nvrmc file.
-
-```bash
-nvm use
-```
-
-`nvm` will automatically switch to the correct Node version.
-
-### 2. **Yarn**
-
-Install Yarn globally if you haven't already:
+If you haven't already, install **Yarn** globally:
 
 ```bash
 npm install --global yarn
@@ -89,27 +51,21 @@ Verify installation:
 yarn --version
 ```
 
-## Setup Instructions
+### 3. Install Dependencies
 
-1. **Clone the Repository**
-
-```bash
-git clone https://github.com/DanielM3218/pokemon-frontend.git
-cd pokemon-frontend
-```
-
-2. **Install Dependencies**
+Install all the required dependencies:
 
 ```bash
+cd ~/Documents/Projects/pokemon-front-ui
 yarn install
 ```
 
-3. **Run the Development Server**
+### 4. Run the Development Server
+
+Start the development server using:
 
 ```bash
 yarn dev
 ```
 
-This starts the Vite server. Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
-
----
+This will launch the app. Open [http://localhost:5173](http://localhost:5173) in your browser to view the application.
