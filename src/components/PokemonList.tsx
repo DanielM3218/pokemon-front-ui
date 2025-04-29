@@ -23,7 +23,7 @@ export default function PokemonList() {
     if (loading) return <div>Loading...</div>;
 
       return (
-        <div className="pokemon-container">
+        <div className="pokemon-list-container">
       <ul className="pokemon-list">
         {pokemonList.map((pokemon) => (
           <li key={pokemon.pokedexNumber} className="pokemon-item">
