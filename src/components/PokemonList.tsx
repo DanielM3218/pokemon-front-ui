@@ -1,5 +1,6 @@
 import { useEffect , useState } from "react";
 import { getAllPokemons , Pokemon } from "../api/fetchList";
+import "../styles/PokemonList.css";
 
 export default function PokemonList() {
     const [pokemonList , setPokemonList] = useState<Pokemon[]>([]);
