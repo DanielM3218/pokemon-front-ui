@@ -5,7 +5,7 @@ export type Pokemon = {
 }
 
 export async function getAllPokemons(): Promise<Pokemon[]> {
-    const  response = await fetch("http://localhost:8080/api/pokemons")
+    const  response = await fetch("http://localhost:8080/api/pokemon")
 
     if (!response.ok) {
         throw new Error("Failed to fetch pokemons");
