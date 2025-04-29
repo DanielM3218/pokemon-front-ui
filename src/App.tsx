@@ -7,7 +7,6 @@ function App() {
 
   return (
      <>
-        <h1>Pokemons List:</h1>
         <PokemonList/>
      </>
   )
