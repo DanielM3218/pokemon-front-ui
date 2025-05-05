@@ -1,11 +1,14 @@
 
 import './App.css'
+import PokemonList from './components/PokemonList'
 
 function App() {
   
 
   return (
-     <h1>Hello World!</h1>
+     <>
+        <PokemonList/>
+     </>
   )
 }
 
